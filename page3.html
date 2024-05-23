@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Star Elements</title>
+        <!--Link to CSS sheet-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <!--Creates navigation bar-->
+    <img class="titleimage" src="https://codehs.com/uploads/11f2b4a560cabcd195477c5491bb8eab" alt="Title image of hollow knight">
+        <ul style="list-style-type: none; margin: 1vw; padding: 0; overflow: hidden; background-color: #334;">
+            <li style="float: left;"><a class="navbar" href="index.html">Intro</a></li>
+            <li style="float: left;"><a class="navbar" href="page2.html">Gallery</a></li>
+            <li style="float: left;"><a class="navbar" href="page4.html">Community</a></li>
+            <li style="float: left;"><a class="navbar" href="page5.html">My Experience</a></li>
+        </ul>
+        <!--Title image and actual content of page-->
+        <img class="headingimage" src="https://codehs.com/uploads/9190cf7a38e1c0fd7350f10834e529b1" alt = "Image saying star elements in the style of hollow knight">
+        <h1>But what are some elements of the game that actually make the game good?<h1>
+        <p>There are a TON of amazing things that go into making Hollow Knight, but just to name a few:</p>
+        <ol>
+        <li>Fluid, rebindable controls</li>
+        <li>Intricately designed lore</li>
+        <li>Intriguing characters</li>
+        <li>Beautiful artwork and visually appealing design</li>
+        <li>Amazing combat system</li>
+        <li>Epic boss fights</li>
+        <li>Difficult but rewarding platforming challenges</li>
+        <li>A customizable playstyle through the game's charms</li>
+        <li>A unique, wide, expansive, interconnected map that makes you earn all the pieces for it</li>
+        <li>Great buildup to any battle or confrontation</li>
+        </ol>
+        <p>But don't just take my word for it; other people feel the same way about the game.
+        <table border="1">
+            <tr>
+                <td>Player</td>
+                <td>Hours on record</td>
+                <td>Review</td>
+            </tr>
+            <tr>
+                <td>purestprodigy</td>
+                <td>31.5</td>
+                <td>I got this game on sale, but even if I paid full price it still feels like I would be ripping off the devs</td>
+            </tr>
+            <tr>
+                <td>Q09066930</td>
+                <td>108.9</td>
+                <td>It is the ultimate Metroidvania with a rich setting, extremely satisfying combat, responsive controls, and last but not least, a unique world to explore that feels like a real adventure.</td>
+            </tr>
+            <tr>
+                <td>JesZah</td>
+                <td>94.1</td>
+                <td>This game helped me through my depression. I think i'd be dead by now. but this new vast world kept me alive, calling me to explore it, hallownest is a gorgeus place, i think everyone should pay a visit. Thanks</td>
+            </tr>
+            <tr>
+                <td>PaPaChubbs123</td>
+                <td>45.5</td>
+                <td>This game is one of the best games I've played in a long time. The combat is fun, tight, and satisfying. Some parts are defintely a challenge, but never feel impossibly hard. The world is absolutely stunning, and its inhabitants are all unique and interesting. The music is also on point with one of the best soundtracks I've heard in a while. 10/10. TLDR: This game is a masterpiece, buy it now!</td>
+            </tr>
+            <tr>
+            </table>
+            <table border="1">
+                <td>Overall steam review</td>
+                <td>Total number of reviews</td>
+                <td>% of positive ratings</td>
+            </tr>
+            <tr>
+                <td>Overwhelmingly positive</td>
+                <td>310,878</td>
+                <td>97%</td>
+            </tr>
+            </table>
+        <div class="gradient-circle">
+        </div>
+        <script>
+        //Use mousemove to get the gradient to follow the cursor
+        document.addEventListener('mousemove', function(e) {
+            var circle = document.querySelector('.gradient-circle');
+            circle.style.top = e.clientY + 'px';
+            circle.style.left = e.clientX + 'px';
+        });
+        </script>
+    </body>
+</html>

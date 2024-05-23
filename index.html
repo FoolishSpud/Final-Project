@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro</title>
+        <!--Link to CSS sheet-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <!--Creates navigation bar-->
+    <img class="titleimage" src="https://codehs.com/uploads/11f2b4a560cabcd195477c5491bb8eab" alt="Title image of hollow knight">
+        <ul style="list-style-type: none; margin: 1vw; padding: 0; overflow: hidden; background-color: #334;">
+            <li style="float: left;"><a class="navbar" href="page2.html">Gallery</a></li>
+            <li style="float: left;"><a class="navbar" href="page3.html">Star Elements</a></li>
+            <li style="float: left;"><a class="navbar" href="page4.html">Community</a></li>
+            <li style="float: left;"><a class="navbar" href="page5.html">My Experience</a></li>
+        </ul>
+        <!--Title image and actual content of page-->
+        <img class="headingimage" src="https://codehs.com/uploads/b98392576034bd83b1cd857464242cae" alt = "Image saying intro in the style of hollow knight">
+        <h1>What is Hollow Knight/when was it released?</h1>
+        <p>Hollow Knight is a metroidvania that came out on February 24, 2017. The trailer can be viewed <span><a href="https://www.youtube.com/watch?v=UAO2urG23S4">here.</a></span></p>
+        <h1>Who made Hollow Knight?</h1>
+        <p> It was created by Team Cherry, an Australia-based game studio who, at the time, consisted of 3 members: Ari Gibson, William Pellen, and Jack Vine. Their website can be found <span><a href="https://www.teamcherry.com.au/about">here.</a></span></p>
+        <img id="tcimage" src="https://codehs.com/uploads/ed65fb3bd6aafd51755384151adecc8d" alt="Picture of the developers behind Team Cherry">
+        <span><h6>Valdivia, Angelo. Image of the three Team Cherry members. 25 Sept. 2018. The Adelaide Review</h6></span>
+        <div class="gradient-circle">
+        </div>
+        <script>
+        //Use mousemove to get the gradient to follow the cursor
+        document.addEventListener('mousemove', function(e) {
+            var circle = document.querySelector('.gradient-circle');
+            circle.style.top = e.clientY + 'px';
+            circle.style.left = e.clientX + 'px';
+        });
+        </script>
+    </body>
+</html>

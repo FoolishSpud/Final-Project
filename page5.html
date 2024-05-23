@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Experience</title>
+        <!--Link to CSS sheet-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <!--Creates navigation bar-->
+    <img class="titleimage" src="https://codehs.com/uploads/11f2b4a560cabcd195477c5491bb8eab" alt="Title image of hollow knight">
+        <ul style="list-style-type: none; margin: 1vw; padding: 0; overflow: hidden; background-color: #334;">
+            <li style="float: left;"><a class="navbar" href="index.html">Intro</a></li>
+            <li style="float: left;"><a class="navbar" href="page2.html">Gallery</a></li>
+            <li style="float: left;"><a class="navbar" href="page3.html">Star Elements</a></li>
+            <li style="float: left;"><a class="navbar" href="page4.html">Community</a></li>
+        </ul>
+        <!--Title image and actual content of page-->
+        <img class="headingimage" src="https://codehs.com/uploads/126497cbd6f57a28854cf27c378ea1ca" alt = "Image saying my experience in the style of hollow knight">
+        <p>I first heard of Hollow Knight around June of 2022, while I was watching a YouTube video. From the moment I saw the game, I was hooked. After several months of asking, I finally got the game around December of 2022.</p>
+        <p>Then, for the next five months, I was completely hooked. I ran through a ton of what the game had to offer, got the main ending, and 112%'d the game (the max % you can get). Then I somewhat grew tired of it and set it aside.</p>
+        <p>Then, I was at a Christmas party with some of my friends in December of 2023. One of them was browsing through my games and saw Hollow Knight, and he expressed interest in trying it out, which I happily agreed to. After a few weeks, he finished with it and gave me my cartridge back, but that event had re-ignited the spark I had for Hollow Knight.</p>
+        <p>After I got the game back, I re-ran through the game several times, cleaned up the rest of the more difficult things I never completed, and set out on a mission to convince the rest of my friends to try it, even further solidifying the sheer passion I had and still do have for the game.</p>
+        <p>One of the things I did was beat the hardest boss in the game without getting hit! Below is a video of me doing that.</p>
+        <video width="320" height="240" controls>
+        <source src="https://codehs.com/uploads/59e9a97469d5b10a4cace8928c8f869b" type="video/mp4">
+        </video>
+        <h6>Video made by me!</h6
+        <!--Creates form and uses JavaScript to display values-->
+    <form name="myForm" method="get" id="myForm">
+            <p>
+                Send me a message :)
+            </p>
+    <label for="name">Your name:</label>
+        <input type="text" id="name" name="name">
+        <p></p>
+        
+    <label for="played">Have you played Hollow Knight Before?</label></br>
+            <input type="radio" id="yes" name="played" value="I have played Hollow Knight before">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="played" value="I have not played Hollow Knight before">
+            <label for="no">No</label><br>
+            <p></p>
+            
+    <label for="recommend">If you have, would you recommend it?</label></br>
+            <input type="radio" id="yes" name="recommend" value="I would recommend Hollow Knight.">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="recommend" value="I would not recommend Hollow Knight.">
+            <label for="no">No</label><br>
+            <input type="radio" id="dont_have_it" name="recommend" value="">
+            <label for="dont_have_it">I haven't played it</label><br>
+            <p></p>
+            
+    <label for="plan">If you haven't, do you plan on getting it?</label></br>
+            <input type="radio" id="yes" name="plan" value="I plan on getting Hollow Knight.">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="plan" value="I do not plan on getting Hollow Knight.">
+            <label for="no">No</label><br>
+            <input type="radio" id="have_it" name="plan" value="">
+            <label for="have_it">I already have it</label><br>
+            <p></p>
+        
+    <label for="final">Anything else you want to tell me?</label><br>
+            <textarea id="final" name="final"></textarea>
+            <p></p>
+        
+    <input type="submit" value="Display message">
+    </form>
+    <p></p>
+    <!--This is where story will go between the div-->
+    <div id="formContents">
+    </div>
+     <div class="gradient-circle">
+     </div>
+        <script>
+            //Get the form element
+            var form = document.getElementById("myForm");
+            
+            
+            //Add event listener for form submission with button
+            form.addEventListener("submit", function(event){
+                event.preventDefault();
+                
+                //Get the input value
+                var name = document.getElementById("name").value;
+                var played = document.getElementsByName("played");
+                var recommend = document.getElementsByName("recommend");
+                var plan = document.getElementsByName("plan");
+                var final = document.getElementById("final").value;
+                
+                for (i = 0; i < played.length; i++) {
+                    if (played[i].checked)
+                    var temp1 = played[i].value;
+                }
+                
+                for (i = 0; i < recommend.length; i++) {
+                    if (recommend[i].checked)
+                    var temp2 = recommend[i].value;
+                }
+                
+                for (i = 0; i < plan.length; i++) {
+                    if (plan[i].checked)
+                    var temp3 = plan[i].value;
+                }
+                
+                //Get the location to place the story
+                var putStory = document.getElementById("formContents");
+                
+                //Display the story
+                putStory.innerHTML = "Thanks! Here's what you sent: My name is " + name + ". " + temp1 + ". " + temp2 + temp3 + " And finally, " + final;
+            });
+            
+            //Use mousemove to get the gradient to follow the cursor
+        document.addEventListener('mousemove', function(e) {
+            var circle = document.querySelector('.gradient-circle');
+            circle.style.top = e.clientY + 'px';
+            circle.style.left = e.clientX + 'px';
+        });
+        </script>
+    </body>
+</html>

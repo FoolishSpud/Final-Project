@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Community</title>
+        <!--Link to CSS sheet-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <!--Creates navigation bar-->
+    <img class="titleimage" src="https://codehs.com/uploads/11f2b4a560cabcd195477c5491bb8eab" alt="Title image of hollow knight">
+        <ul style="list-style-type: none; margin: 1vw; padding: 0; overflow: hidden; background-color: #334;">
+            <li style="float: left;"><a class="navbar" href="index.html">Intro</a></li>
+            <li style="float: left;"><a class="navbar" href="page2.html">Gallery</a></li>
+            <li style="float: left;"><a class="navbar" href="page3.html">Star Elements</a></li>
+            <li style="float: left;"><a class="navbar" href="page5.html">My Experience</a></li>
+        </ul>
+        <!--Title image and actual content of page-->
+        <img class="headingimage" src="https://codehs.com/uploads/6f1a54c1248c3286be9944e7e52fea48" alt = "Image saying community in the style of hollow knight">
+        <p>Although the game itself can keep a person entertained for dozens of hours, eventually, all games run out of new content. That's where the community comes in.</p>
+        <h1>Scarab</h1>
+        <p>Scarab is the game's mod installer, and there are hundreds upon hundreds of mods inside of it. Some particularly popular ones include the Rando mod, a mod that randomizes all of the items, abilities, charms, maps, etc. in the game, and the Custom Skin mod, where people can upload their own skins and see them in-game.<p>
+        <img id="scarabimage" src="https://codehs.com/uploads/e191f52584850a0b862fd9fa86d267bb" alt="Image of the scarab mod downloader for hollow knight">
+        <h6>Image originating from Github</h6>
+        <h1>The YouTube scene</h1>
+        <p>While Hollow Knight is a rather successful game, selling over 3 million copies, its influence on the YouTube scene is rather small. However, all of the people that do make content, such as Mossbag, fireb0rn, Skurry, ccmaci, Relyea, and many more, have shown a great passion for the game and has inspired many others to give it a try.</p> 
+        <div class="gradient-circle">
+        </div>
+        <script>
+        //Use mousemove to get the gradient to follow the cursor
+        document.addEventListener('mousemove', function(e) {
+            var circle = document.querySelector('.gradient-circle');
+            circle.style.top = e.clientY + 'px';
+            circle.style.left = e.clientX + 'px';
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+@import url("https://use.typekit.net/qga1fyg.css");
+
+html {
+   font-family: "trajan-pro-3", serif;
+   color: white;
+   text-shadow: 0 0 10px #fff;
+   background-color: #000044;
+   padding-top: 10vh;
+}
+
+body {
+   margin: 0; /* Ensure no margin on body element */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  font-size: 2.45vw;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Ensure the ul spans the full width */
+  z-index: 1030;
+  display: flex;
+  justify-content: center;
+}
+
+ul li{
+  float: none;
+  display: inline-block; 
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #236;
+}
+.navbar {
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none;
+    
+}
+.titleimage {
+    width:50vw;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+    font-size:1.5vw;
+}
+
+form p {
+    font-size:2.5vw;
+}
+
+.gradient-circle {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 700px;
+   height: 700px;
+   background: radial-gradient(circle, rgba(0, 0, 175, 0.2), rgba(0, 0, 125, 0.02), rgba(0, 0, 100, 0));
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+}
+.headingimage {
+    width:40vw;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+p a {
+    color:green;
+    text-shadow: 0 0 0px #004;
+}
+
+p a:hover {
+    color:blue;
+    text-shadow: 0 0 0px #004;
+}
+
+p a:visited {
+    color:purple;
+    text-shadow: 0 0 0px #004;
+}
+
+h1 {
+    font-weight:normal;
+    font-size:3.75vw;
+}
+
+h6 {
+    font-weight:normal;
+    font-size:1.5vw;
+}
+
+html p {
+    font-size:2vw;
+}
+
+h3 {
+    font-weight:normal;
+    font-size:2.5vw;
+}
+
+#tcimage {
+    width:40vw;
+}
+
+.galleryimage {
+    width:30vw;
+    height:17vw;
+}
+
+ol li {
+    font-size:1.75vw;
+}
+
+td {
+    font-size:2.5vw;
+}
+
+#scarabimage {
+    width:40vw;
+    height:25vw;
+}
